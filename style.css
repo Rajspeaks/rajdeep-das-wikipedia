@@ -344,17 +344,16 @@ div.articleRight {
 	float: right;
 	background-color: #f8f9fa;
 	font-size: 94%;
-	text-align: center;
+	text-align: auto;
 	overflow: hidden;
-	line-height: 1.8em;
-	padding: 3px;
+	line-height: 2em;
+	padding: 1px;
 	font-size: 94%;
-	margin: 0 0 5px 20px;
-	text-align: left;
+	margin: auto;
 }
 div.articleRightInner {
-	border: 3px solid #c8ccd1;
-	padding: 17px;
+	border: 0px solid #c8ccd1;
+	padding: 15px;
 	background-color: #f8f9fa;
 	font-size: 94%;
 	text-align: center;
@@ -594,20 +593,107 @@ span.user {
 		display: none;
 	}
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
 	.sidebar {
-		width: 6em;
-		padding: 3px 0.5em 10px 0.5em;
+		/*width: em;
+		padding: 3px 0.5em 10px 0.5em;*/
+		display: none;
 	}
 	.mainsection {
-		margin: 0 0 0 7em;
+		margin:auto;
 	}
 	.contentsPanel {
 		width: auto;
 	}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 	#simpleSearch {
 		display: none;
 	}
+}
+.imgpos{margin-left: 50px;margin-right: 50px;}
+#articleRightmob{display: none;}
+#articleRightInnermob{display: none;}
+
+@media screen and (max-width: 500px) {
+
+   .imgpos{margin-left: 50px;margin-right: 50px;}
+
+	#articleRightmob
+	{ 
+	display: block;
+	border: 0px solid #c8ccd1;
+	padding: 1px;
+	margin: auto
+	background-color: #f8f9fa;
+	font-size: 94%;
+	text-align: auto;
+	overflow: hidden;
+	line-height: 2em;
+	padding: 1px;
+	font-size: 94%;
+	margin: auto;
+}
+ #articleRightInnermob {
+ 	display: block;
+	border: 1px solid #c8ccd1;
+	padding: 1px;
+	background-color:#f8f9fa;
+	font-size: 94%;
+	margin: auto;
+	text-align: auto;
+	overflow: hidden;
+}
+
+.articleRight{display: none;}
+.articleRightInner{display: none;}
+}
+@media screen and (max-width: 500px) {
+	.article {
+	padding: 1em 1em 1em 1em;
+/*	border-left: 0px solid #a7d7f9;*/
+	background: #FFF;
+	line-height: 1.6;
+	font-size: 0.875em;
+	border-top: 1px solid #a7d7f9;
+	border-bottom: 1px solid #a7d7f9;
+	}
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+	background: none;
+	font-weight: normal;
+	margin: 0;
+	overflow: hidden;
+	padding-top: 0.5em;
+	padding-bottom: 0.17em;
+}
+.article h1 {
+	font-family: 'Linux Libertine','Georgia','Times',serif;
+	border-bottom: 1px solid #a2a9b1;
+}
+.article h2 {
+	font-size: 1.6em;
+	margin: 0.5em 0 0.5em 0;
+	font-family: 'Linux Libertine','Georgia','Times',serif;
+	border-bottom: 1px solid #a2a9b1;
+	line-height: 1.4em;
+	padding-bottom: 0em;
+}
+.article h3 {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.article p.roleNote {
+/*	padding: 1em 0 0 1.6em;*/
+	font-style: italic;
+}
+p.siteSub {
+	font-size: 92%;
+}
+
+.navigation {
+/*	padding: 0.15em 0 0 0.45em;*/
+display: none;
+}
+
 }
