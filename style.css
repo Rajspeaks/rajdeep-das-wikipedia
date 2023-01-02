@@ -340,7 +340,7 @@ a:hover {
 }
 div.articleRight {
 	border: 1px solid #c8ccd1;
-	padding: 3px;
+	padding: 0px;
 	float: right;
 	background-color: #f8f9fa;
 	font-size: 94%;
@@ -349,14 +349,15 @@ div.articleRight {
 	line-height: 2em;
 	padding: 1px;
 	font-size: 94%;
-	margin: auto;
+	margin-left: 15px;
 }
 div.articleRightInner {
 	border: 0px solid #c8ccd1;
-	padding: 15px;
+	padding: 0px;
 	background-color: #f8f9fa;
 	font-size: 94%;
-	text-align: center;
+	margin: auto;
+	text-align: auto;
 	overflow: hidden;
 }
 .logo {
@@ -611,13 +612,18 @@ span.user {
 		display: none;
 	}
 }
-.imgpos{margin-left: 50px;margin-right: 50px;}
+
+
+
+.articlebox-desk{display:block;margin-left: 50px;margin-right: 50px;text-align: center;}
+.articlebox-mob{display: none;}
 #articleRightmob{display: none;}
 #articleRightInnermob{display: none;}
 
 @media screen and (max-width: 500px) {
 
-   .imgpos{margin-left: 50px;margin-right: 50px;}
+   .articlebox-mob{display:block;margin-left: 50px;margin-right: 50px;text-align: center;}
+   .articlebox-desk{display: none;}
 
 	#articleRightmob
 	{ 
