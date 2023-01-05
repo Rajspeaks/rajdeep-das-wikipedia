@@ -339,7 +339,7 @@ a:hover {
 	word-wrap: break-word;
 }
 div.articleRight {
-	border: 1px solid #c8ccd1;
+	border: 1px solid darkgray;
 	padding: 0px;
 	float: right;
 	background-color: #f8f9fa;
@@ -350,6 +350,7 @@ div.articleRight {
 	padding: 1px;
 	font-size: 94%;
 	margin-left: 15px;
+
 }
 div.articleRightInner {
 	border: 0px solid #c8ccd1;
@@ -619,6 +620,8 @@ span.user {
 .articlebox-mob{display: none;}
 #articleRightmob{display: none;}
 #articleRightInnermob{display: none;}
+.mobnav{display: none;}
+.logo-mob{display: none;}
 
 
 @media screen and (max-width: 500px) {
@@ -697,6 +700,15 @@ h1, h2, h3, h4, h5, h6 {
 p.siteSub {
 	font-size: 92%;
 }
+
+.mobnav{
+	display: block;
+	max-width: 100%;
+	position: relative;
+ 	margin-left: 10px;
+
+}
+.logo-mob{display: block;height: 90px;width: 180px;}
 
 .navigation {
 /*	padding: 0.15em 0 0 0.45em;*/
